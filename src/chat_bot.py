@@ -28,7 +28,7 @@ class ChatBot(object):
             
             
             if with_knowledge_base and self.knowledge_base:
-                template = '我将给你一些文档内容以及来源，请你阅读并回答我的问题，你可以对文档进行总结，也可以加入自己已有的知识。答案不需要包含没用的话。\n'
+                template = '我将给你一些文档内容以及来源，请你阅读并回答我的问题，你可以对文档进行总结，也可以加入自己已有的知识，但必须以文档内容为主。\n'
                 similar_docs = self.knowledge_base.similarity_search(input_text, k=10)
                 index = 1
                 for doc in similar_docs:
