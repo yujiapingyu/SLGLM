@@ -4,6 +4,11 @@ simple local glm（简单的本地GLM系统），可用于本地知识库的搭�
 
 PS：langchain-glm的代码过于复杂和冗长，对于初学者不是很友好。本仓库的代码量不到200行，可以给初学者一些参考。
 
+环境：python3.10.6
+```
+pip install requirement.txt
+```
+
 ## 以医疗问答系统为例
 ### 1. 数据集
 采用开源的医疗数据集（见参考内容），使用python的dataset库下载完毕后，进行数据的预处理：
